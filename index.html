@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Dexter Dionson | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Devicon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <h1>Hi, I’m <span class="highlight">John Dexter Dionson</span></h1>
+      <h2>Full Stack Engineer</h2>
+      <p>
+        I’m a freelance web developer with <b>2 years of experience</b> specializing in Angular, Node.js, ExpressJS, and MongoDB.  
+        I build modern, scalable, and user-friendly websites & applications.
+      </p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+
+        <!-- CHARGE Project -->
+        <div class="project-card">
+          <div class="slider-container">
+            <div class="slider" id="chargeSlider">
+              <img src="assets/chargeproject/charge1.png" alt="C.H.A.R.G.E Screenshot 1" onclick="openLightbox(this.src)">
+              <img src="assets/chargeproject/charge2.png" alt="C.H.A.R.G.E Screenshot 2" onclick="openLightbox(this.src)">
+              <img src="assets/chargeproject/charge3.png" alt="C.H.A.R.G.E Screenshot 3" onclick="openLightbox(this.src)">
+              <img src="assets/chargeproject/charge4.png" alt="C.H.A.R.G.E Screenshot 4" onclick="openLightbox(this.src)">
+              <img src="assets/chargeproject/charge5.png" alt="C.H.A.R.G.E Screenshot 5" onclick="openLightbox(this.src)">
+            </div>
+            <div class="dots" id="chargeDots"></div>
+          </div>
+          <h3>C.H.A.R.G.E</h3>
+          <p>
+            Clean Home Autonomous Robot with Green Energy — A smart vacuum robot featuring
+            autonomous navigation (ROS 2, LIDAR), solar-powered wireless charging, and
+            real-time web dashboard integration (Angular, Node.js, MongoDB).
+          </p>
+        </div>
+
+        <!-- E-commerce Store Project -->
+        <div class="project-card">
+          <div class="slider-container tall-slider">
+            <div class="slider" id="ecommerceSlider">
+              <img src="assets/e-commerce/e-commerce4.png" alt="E-commerce Screenshot 1" onclick="openLightbox(this.src)">
+              <img src="assets/e-commerce/e-commerce3.png" alt="E-commerce Screenshot 2" onclick="openLightbox(this.src)">
+              <img src="assets/e-commerce/e-commerce2.png" alt="E-commerce Screenshot 3" onclick="openLightbox(this.src)">
+              <img src="assets/e-commerce/e-commerce5.png" alt="E-commerce Screenshot 4" onclick="openLightbox(this.src)">
+            </div>
+            <div class="dots" id="ecommerceDots"></div>
+          </div>
+          <h3>E-commerce Store</h3>
+          <p>Built with Angular & Express</p>
+        </div>
+
+        <!-- Business Dashboard Project -->
+        <div class="project-card">
+          <div class="slider-container tall-slider">
+            <div class="slider" id="businessSlider">
+              <img src="assets/business/business1.png" alt="Business Dashboard Screenshot 1" onclick="openLightbox(this.src)">
+              <img src="assets/business/business2.png" alt="Business Dashboard Screenshot 2" onclick="openLightbox(this.src)">
+              <img src="assets/business/business3.png" alt="Business Dashboard Screenshot 3" onclick="openLightbox(this.src)">
+            </div>
+            <div class="dots" id="businessDots"></div>
+          </div>
+          <h3>Business Dashboard</h3>
+          <p>Real-time analytics platform with professional UI</p>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <h3 class="skills-category-title">Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-angularjs-plain colored"></i><p>Angular</p></div>
+        <div class="skill-card"><i class="devicon-html5-plain colored"></i><p>HTML</p></div>
+        <div class="skill-card"><i class="devicon-css3-plain colored"></i><p>CSS</p></div>
+        <div class="skill-card"><i class="devicon-javascript-plain colored"></i><p>JavaScript</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+        <div class="skill-card"><i class="devicon-express-original"></i><p>ExpressJS</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Software Development</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+        <div class="skill-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+        <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+        <div class="skill-card"><i class="devicon-csharp-plain colored"></i><p>C#</p></div>
+        <div class="skill-card"><i class="devicon-c-plain colored"></i><p>C</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Database</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-mongodb-plain colored"></i><p>MongoDB</p></div>
+        <div class="skill-card"><i class="devicon-microsoftsqlserver-plain colored"></i><p>SQL</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Testing</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-jasmine-plain colored"></i><p>Jasmine</p></div>
+        <div class="skill-card"><i class="devicon-karma-plain colored"></i><p>Karma</p></div>
+        <div class="skill-card"><p>Pytest</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Tools & Integrations</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+        <div class="skill-card"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
+        <div class="skill-card"><img src="assets/openai.svg" alt="OpenAI" class="custom-icon"><p>OpenAI API</p></div>
+        <div class="skill-card"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
+      </div>
+
+      <h3 class="skills-category-title">Embedded / Robotics</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="devicon-arduino-plain colored"></i><p>Arduino</p></div>
+        <div class="skill-card"><img src="assets/raspberrypi.svg" alt="Raspberry Pi" class="custom-icon"><p>Raspberry Pi</p></div>
+        <div class="skill-card"><i class="devicon-linux-plain colored"></i><p>Robot Operating System (ROS)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Let’s work together! You can reach me here:</p>
+      <div class="contact-cards">
+        <a href="mailto:johndexterdylandionson@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>johndexterdylandionson@gmail.com</p>
+        </a>
+        <a href="https://ph.linkedin.com/in/john-dexter-dionson-b14484288" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>John Dexter Dionson</p>
+        </a>
+        <a href="https://github.com/engrd2023" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>github.com/engrd2023</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:johndexterdylandionson@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://ph.linkedin.com/in/john-dexter-dionson-b14484288" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/engrd2023" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© 2025 John Dexter Dionson. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
